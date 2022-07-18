@@ -1,0 +1,413 @@
+/*paleta de colores
+#F2D7D9 #D3CEDF #9CB4CC #748DA6 #f1f3f2 */
+/*font-family: 'Fascinate', cursive;
+font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f3f2;
+    color:#748DA6;
+    text-align: center;
+}
+h1{
+    justify-self: start;
+    align-self: flex-end;
+}
+header h1{
+    background-color: #f1f3f2;
+    font-size: 500%;
+    font-family: 'Fascinate', cursive;
+    padding: 20px;
+    color: #748DA6;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "logo titulo titulo"
+    "nav nav nav";
+}
+.padreLogo{
+    display: grid;
+    justify-items: end;
+}
+.logo{
+    grid-area: logo;
+}
+.titulo{
+    grid-area: titulo;
+}
+.navegacion{
+    grid-area: nav;
+}
+nav{
+    width: 100%;
+    height: auto;
+    font-size: 200%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f2;
+    border: 20px solid #F2D7D9;
+}
+ul li{
+    padding: 50px;
+    list-style: none; 
+    display: inline;
+}
+a{
+    color:#748DA6;
+    text-decoration: none;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+h2{ 
+    width: 100%;
+    height: auto;
+    grid-area: h2;
+    font-family: 'Fascinate', cursive;
+    text-align: center;
+    border: 20px solid #F2D7D9;
+    font-size: 200%;
+}
+h3{
+    font-size: 200%;
+    font-family: 'Fascinate', cursive;
+    text-align: left;
+}
+h4{
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    padding: 3rem;
+    text-align: center;
+    font-size: 100%;
+}
+article{
+    border: 20px double #F2D7D9;
+    background-color: #f1f3f2;
+}
+form{
+    font-family: 'Roboto', sans-serif;
+    border:10px solid #F2D7D9 ;
+    padding: 5%;
+}
+footer{
+    width: 100%;
+    border: 70px solid #F2D7D9;
+    background-color:#f1f3f2;
+}
+.email{
+    width: 100%;
+    font-size: 200%;
+    border:10px solid #F2D7D9;
+    padding: 30px;
+}
+.redes{
+    width: 100%;
+    height: auto;
+    border:10px solid #F2D7D9;
+    padding: 30px;
+}
+.cafe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 10px solid  #F2D7D9;
+}
+.grillaPadre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    gap: 5px;
+}
+.encabezado{
+    grid-area: header;
+}
+.pie{
+    grid-area: footer;
+}
+.menu{
+    grid-area: main;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 50px;
+}
+.seccion1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion1 img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+.seccion2 img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+.seccion3 img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+.menuPadre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "h2 h2 h2" 
+    "titulo1 titulo1 titulo1"
+    "torta1 torta2 torta3"
+    "torta4 none none"
+    "titulo2 titulo2 titulo2"
+    "cafe1 cafe2 cafe3";
+    gap: 10px;
+}
+.titulo1{
+    grid-area: titulo1;
+}
+.titulo2{
+    grid-area: titulo2;
+}
+.torta1{
+    grid-area: torta1;
+}
+.torta2{
+    grid-area: torta2;
+}
+.torta3{
+    grid-area: torta3;
+}
+.torta4{
+    grid-area: torta4;
+}
+.cafe1{
+    grid-area: cafe1;
+}
+.cafe2{
+    grid-area: cafe2;
+}
+.cafe3{
+    grid-area: cafe3;
+}
+.torta1 img{
+    width: 50%;
+    height: auto;
+    border-radius: 10%;
+}
+.torta2 img{
+    width: 50%;
+    height: auto;
+    border-radius: 10%;
+}
+.torta3 img{
+    width: 50%;
+    height: auto;
+    border-radius: 10%;
+}
+.torta4 img{
+    width: 50%;
+    height: auto;
+    border-radius: 10%;
+}
+.cafe1 img{
+    width: 100%;
+    height: auto;
+}
+.cafe2 img{
+    width: 100%;
+    height: auto;
+}
+.cafe3 img{
+width: 100%;
+    height: auto;
+}
+.historia{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.historia img{
+    width: 100%;
+    height: auto;
+    }
+.trabajo{
+    display: flex;
+    flex-direction: column;
+}
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.padreFormulario{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    font-size: 150%;
+}
+.padrePromociones{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.take{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.take img{
+    width: 30%;
+    display: flex;
+    align-self: center;
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px){
+    .grillaPadre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    }
+    .encabezado{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto; 
+        }
+    .pie{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto; 
+        }
+    .menuPadre{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+    }
+    .padreLogo{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .padreFormulario{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .padrePromociones{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+} 
+@media screen and (max-width: 375px){
+
+    .grillaPadre{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    }
+    .encabezado{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto; 
+        }
+    .pie{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto; 
+        }
+        .menuPadre{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+        .padreLogo{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+        .padreFormulario{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+        .padrePromociones{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
