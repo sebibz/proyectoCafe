@@ -21,7 +21,7 @@ h1{
 }
 header h1{
     background-color: #f1f3f2;
-    font-size: 500%;
+    font-size: 600%;
     font-family: 'Fascinate', cursive;
     padding: 20px;
     color: #748DA6;
@@ -51,8 +51,8 @@ nav{
     height: auto;
     font-size: 200%;
     font-family: 'Roboto', sans-serif;
-    background-color: #f1f3f2;
-    border: 20px solid #F2D7D9;
+    background-color: #f1f3f3;
+    border: 20px solid #b967a3c9;
 }
 ul li{
     padding: 50px;
@@ -74,10 +74,10 @@ h2{
     font-family: 'Fascinate', cursive;
     text-align: center;
     border: 20px solid #F2D7D9;
-    font-size: 200%;
+    font-size: 300%;
 }
 h3{
-    font-size: 200%;
+    font-size: 300%;
     font-family: 'Fascinate', cursive;
     text-align: left;
 }
@@ -240,16 +240,19 @@ footer{
     border-radius: 10%;
 }
 .cafe1 img{
-    width: 100%;
+    width: 70%;
     height: auto;
+    margin: 10%;
 }
 .cafe2 img{
-    width: 100%;
+    width: 70%;
     height: auto;
+    margin: 10%;
 }
 .cafe3 img{
-width: 100%;
+    width: 70%;
     height: auto;
+    margin: 10%;
 }
 .historia{
     width: 100%;
@@ -289,10 +292,51 @@ width: 100%;
     align-items: center;
 }
 .take img{
-    width: 30%;
+    width: 40%;
     display: flex;
     align-self: center;
 }
+/* animaciones servicio trabajando en rama secundaria*/
+
+.avatar1{
+    width: 60%;
+    height: auto;
+    transition: width 3s, height 3s;
+}
+.avatar1:hover{
+    width: 70%;
+    height: auto;
+    transform: translate(15%);
+}
+.mapa{
+    margin: 5%;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    transition: width 3s, height 3s; 
+}
+.mapa:hover{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.aniTorta{
+    transition: all, 5s;
+}
+.aniTorta:hover{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+.cafe1, .cafe2, .cafe3{
+    transition: all, 5s;
+}
+.cafe1:hover, .cafe2:hover, .cafe3:hover{
+    transform: scale(1.3);
+}
+
 
 
 /* responsive */
