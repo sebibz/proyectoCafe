@@ -1,5 +1,5 @@
 /*paleta de colores
-#F2D7D9 #D3CEDF #9CB4CC #748DA6 #f1f3f2 */
+#F2D7D9 #D3CEDF #9CB4CC #748DA6 #f1f3f2 #F8BBD0 */
 /*font-family: 'Fascinate', cursive;
 font-family: 'Roboto', sans-serif; */
 
@@ -51,8 +51,8 @@ nav{
     height: auto;
     font-size: 200%;
     font-family: 'Roboto', sans-serif;
-    background-color: #f1f3f3;
-    border: 20px solid #F2D7D9;
+    background-color: #f1f3f2;
+    border: 20px solid #F8BBD0;
 }
 ul li{
     padding: 50px;
@@ -73,7 +73,7 @@ h2{
     grid-area: h2;
     font-family: 'Fascinate', cursive;
     text-align: center;
-    border: 20px solid #F2D7D9;
+    border: 20px solid #F8BBD0;
     font-size: 300%;
 }
 h3{
@@ -92,29 +92,29 @@ p{
     font-size: 100%;
 }
 article{
-    border: 20px double #F2D7D9;
+    border: 20px double #F8BBD0;
     background-color: #f1f3f2;
 }
 form{
     font-family: 'Roboto', sans-serif;
-    border:10px solid #F2D7D9 ;
+    border:10px solid #F8BBD0 ;
     padding: 5%;
 }
 footer{
     width: 100%;
-    border: 70px solid #F2D7D9;
+    border: 70px solid #F8BBD0;
     background-color:#f1f3f2;
 }
 .email{
     width: 100%;
     font-size: 200%;
-    border:10px solid #F2D7D9;
+    border:10px solid #F8BBD0;
     padding: 30px;
 }
 .redes{
     width: 100%;
     height: auto;
-    border:10px solid #F2D7D9;
+    border:10px solid #F8BBD0;
     padding: 30px;
 }
 .cafe{
@@ -142,7 +142,7 @@ footer{
     grid-area: main;
     display: flex;
     flex-wrap: nowrap;
-    padding-top: 50px;
+    padding-top: 1%;
 }
 .seccion1{
     width: 100%;
@@ -295,6 +295,34 @@ footer{
     width: 40%;
     display: flex;
     align-self: center;
+}
+.grillaHistoria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "articulo1 articulo2 articulo2"
+    "articulo1 articulo2 articulo2";
+    align-items: center;
+}
+.articulo1 {
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    grid-area: articulo1;
+    }
+.articulo1 img{
+    width: 90%;
+    height: 90%;
+}
+.articulo2{
+    width: 100%;
+    height: 100%;
+    grid-area: articulo2;
+}
+iframe{
+    width:100%;
+    height: 86%;
+    
 }
 /* animaciones servicio trabajando en rama secundaria*/
 
