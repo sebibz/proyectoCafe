@@ -30,20 +30,45 @@
             </nav>
         </header>
         <main class="menu">
-            <section class= "seccion1">
-                <h2>¿Quienes somos nosotros?</h2>
-                <img src="./img/cafeteria1.jpg" alt="cafeteria">
-                <p>Somos una cafeteria ubicada en el sur del GBA.Contamos con mas de 10 años de experiencia en el rubro, tenemos una variedad de cafes, de diferentes partes del mundo y nuestra pasteleria artesanal es de las mejores del pais.</p>
-            </section>
-            <section class="seccion2">
-                <h2>¿Quienes son los clientes?</h2>
-                <img src="./img/cafeteria.jpg" alt="cafeteria">
-                <p>Nuestro publico es diverso de todas las edades.Hay quienes buscan una merienda y una experiencia para poder relajarse con sus amigos o pareja.Otros prefieren el servicio en la barra de take away.</p>
-            </section>
-            <section class="seccion3">
-                <h2>¿Que nos apasiona del cafe?</h2>
-                <img src="./img/amantesCafe.jpg" alt="cafeteria">
-                <p>Nos apasiona poder compartir lo que mas amamos que es el cafe y la buena pasteleria de autor. Nuestra meta es poder expandir el sentimiento que tenemos con todos los que mas podamos.</p>
+            <section>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/cafeterias.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>¿Quienes somos?</h5>
+                        <p>Somos una cafeteria ubicada en el sur del GBA.Contamos con mas de 10 años de experiencia en el rubro, tenemos una variedad de cafes, de diferentes partes del mundo y nuestra pasteleria artesanal es de las mejores del pais.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/clientes.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>¿Quienes son los clientes?</h5>
+                        <p>Nuestro publico es diverso de todas las edades.Hay quienes buscan una merienda y una experiencia para poder relajarse con sus amigos o pareja.Otros prefieren el servicio en la barra de take away.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/pasio.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>¿Que nos apasiona del cafe?</h5>
+                        <p>Nos apasiona poder compartir lo que mas amamos que es el cafe y la buena pasteleria de autor. Nuestra meta es poder expandir el sentimiento que tenemos con todos los que mas podamos.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </section>
         </main>
         <footer class="pie">
@@ -57,11 +82,35 @@
                     <input type="button" value="enviar"/>
                 </form>
             </div>
-            <div class="redes">
-                <h4>Redes Sociales</h4>
-                <a href="https://www.instagram.com" target="_blank"><img src="./img/iconoInstragram.png" alt="instagram"></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="./img/iconoFacebook .png" alt="facebook"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="./img/iconoTwitter.png" alt="twitter"></a>
+            <div class="footer_section layout_padding">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <h3 class="useful_text">About</h3>
+                        <p class="footer_text">Desing by Sebastian Ibañez</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h3 class="useful_text">Menu</h3>
+                        <div class="footer_menu">
+                            <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="./pages/contacto.html">Contacto</a></li>
+                            <li><a href="./pages/historia.html">Historia</a></li>
+                            <li><a href="./pages/productos.html">Productos</a></li>
+                            <li><a href="./pages/servicios.html">Servicios</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4>Redes Sociales</h4>
+                        <div class="footer_menu">
+                            <a href="https://www.instagram.com" target="_blank"><img src="./img/iconoInstragram.png" alt="instagram"></a>
+                            <a href="https://www.facebook.com" target="_blank"><img src="./img/iconoFacebook .png" alt="facebook"></a>
+                            <a href="https://www.twitter.com" target="_blank"><img src="./img/iconoTwitter.png" alt="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </footer>
     </div>
