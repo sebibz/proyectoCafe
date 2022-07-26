@@ -1,5 +1,5 @@
 /*paleta de colores
-#2d1818 #7f7777 #f1f3f2 */
+#f1f3f2  #748DA6 #937DC2*/
 /*font-family: 'Fascinate', cursive;
 font-family: 'Roboto', sans-serif; */
 
@@ -9,23 +9,21 @@ font-family: 'Roboto', sans-serif; */
     padding: 0%;
     box-sizing: border-box;
 }
-
 body{
     background-color: #f1f3f2;
-    color:#7f7777;
+    color:#2C3333;
     text-align: center;
 }
-
 /*Header y Navbar*/
 h1{
     width: 100%;
     height: 100%;
     justify-self: start;
-    background-color: #f1f3f2;
+    background-color:#f1f3f2;
     font-size: 300%;
     font-family: 'Fascinate', cursive;
     padding: 5%;
-    color: #7f7777;
+    color: #748DA6;
     text-align: start;
 }
 header{
@@ -64,17 +62,19 @@ h2{
     grid-area: h2;
     font-family: 'Fascinate', cursive;
     text-align: center;
-    border: 20px solid #2d1818;
+    border: 20px solid #937DC2;
     font-size: 200%;
+    color: #748DA6;
 }
 h3{
     font-size: 200%;
     font-family: 'Fascinate', cursive;
-    text-align: left;
+    color: #748DA6;
 }
 h4{
-    font-size: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+    font-family: 'Fascinate', cursive;
+    color: #f1f3f2;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -83,35 +83,16 @@ p{
     font-size: 100%;
 }
 article{
-    border: 20px double #2d1818;
+    border: 20px double #937DC2;
     background-color: #f1f3f2;
-}
-iframe{
-    width: 100%;
-    height: 100%;
-}
-footer{
-    width: 100%;
-    border: 0px solid #f1f3f2;
-    background-color:#f1f3f2;
 }
 .email{
     width: 100%;
     font-size: 100%;
-    border:10px solid #f1f3f2;
     padding: 30px;
-}
-.redes{
-    width: 100%;
-    height: auto;
-    border:10px solid #f1f3f2;
-    padding: 30px;
-}
-.cafe{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: 10px solid  #F2D7D9;
+    background-image: url(../img/banner-bg.png);
+    background-size: cover;
+    align-items: baseline;
 }
 .grillaPadre{
     display: grid;
@@ -120,7 +101,6 @@ footer{
     "header header header"
     "main main main"
     "footer footer footer";
-    gap: 5px;
 }
 .encabezado{
     grid-area: header;
@@ -155,7 +135,6 @@ footer{
     gap: 10%;
     padding: 2%;
 }
-
 .cafe1{
     grid-area: cafe1;
 }
@@ -164,26 +143,6 @@ footer{
 }
 .cafe3{
     grid-area: cafe3;
-}
-.torta1 img{
-    width: 50%;
-    height: auto;
-    border-radius: 10%;
-}
-.torta2 img{
-    width: 50%;
-    height: auto;
-    border-radius: 10%;
-}
-.torta3 img{
-    width: 50%;
-    height: auto;
-    border-radius: 10%;
-}
-.torta4 img{
-    width: 50%;
-    height: auto;
-    border-radius: 10%;
 }
 .cafe1 img{
     width: 70%;
@@ -208,23 +167,11 @@ footer{
 .historia img{
     width: 100%;
     height: auto;
-    }
-.trabajo{
-    display: flex;
-    flex-direction: column;
 }
 .servicios{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.padreFormulario{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    font-size: 150%;
 }
 .padrePromociones{
     width: 100%;
@@ -266,11 +213,13 @@ footer{
     grid-area: articulo2;
 }
 iframe{
-    width:100%;
-    height: 86%;
-}
-.banner{
     width: 100%;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
 }
 
 /* animaciones servicio trabajando en rama secundaria*/
@@ -309,10 +258,9 @@ iframe{
 
 .footer_section {
     width: 100%;
-    float: left;
     background-color: #252525;
     height: auto;
-    padding: 95px 0px;
+    padding: 50px 0px;
 }
 
 .useful_text {
@@ -331,6 +279,12 @@ iframe{
 }
 
 .footer_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer_redes {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -358,72 +312,33 @@ iframe{
 }
 
 /* responsive */
-@media screen and (max-width: 768px){
+
+@media (min-width: 720px) and (max-width: 1200px){
+
     .grillaPadre{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-    }
-    .encabezado{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
         }
-    .pie{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: auto; 
-        }
-    .menuPadre{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-    }
-    .padreLogo{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-    }
-    .padreFormulario{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-    }
-    .padrePromociones{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .grillaHistoria{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
     .tortas{
-        width: 100%;
-        height: 100%;
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .media{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        }         
+        
+
+    }
+
 }
-@media screen and (max-width: 375px){
+@media (max-width: 719.98px){
 
     .grillaPadre{
     display: grid;
@@ -433,61 +348,46 @@ iframe{
     "main"
     "footer";
     }
-    .encabezado{
-        width: 100%;
-        height: auto;
+    .tortas{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        
     }
-    .menu{
+    .menuPadre{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "h2" 
+        "titulo1"
+        "tortas"
+        "titulo2"
+        "cafe1"
+        "cafe2"
+        "cafe3";
+    }
+    .footer_redes{
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .footer_menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .grillaHistoria{
         width: 100%;
-        height: auto; 
-        }
-    .pie{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: auto; 
-        }
-        .menuPadre{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-        }
-        .padreLogo{
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-        }
-        .padreFormulario{
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-        }
-        .padrePromociones{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .grillaHistoria{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            }
-        .tortas{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            }     
-} 
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+}
+
 
 
 

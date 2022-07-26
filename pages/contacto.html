@@ -13,7 +13,7 @@
     <div class="grillaPadre">
         <header class="encabezado">
                 <h1 class="titulo">Cafe Sureño</h1>
-            <nav class="navbar navbar-expand-lg navbar-light" >
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html"><img src="../img/logoCafe.png" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,60 +29,70 @@
                 </div>
             </nav>
         </header>
-        <main class="menu trabajo">
+        <main class="menu">
+            <div class="menuTrabajo"></div>
                 <h2>Trabaja con nosotros</h2>
-                <p>Completa el formulario</p>
-                    <form class="padreFormulario">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre">
-                        <br>
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido"/>
-                        <br>
-                        <label for="edad">Edad</label>
-                        <input type="number" name="edad"/>
-                        <br><br>
-                        <div>Hombre
-                            <input type="radio" name="sexo" value="Hombre"/>
-                        </div>
-                        <div>Mujer
-                            <input type="radio" name="sexo" value="Mujer"/>
-                        </div>
-                        <div>No binario
-                            <input type="radio" name="sexo" value="No binario"/>
-                        </div>
-                        <br><br>
-                        <div>Consultas
-                            <br>
-                            <textarea></textarea>
-                        </div>
-                        <br><br> 
-                        <div>Acepta términos y condiciones
-                        <input type="checkbox" name="acepta" value="1"/>
-                        </div>
-                        <br>
-                        <input type="submit" value="Enviar formulario"/>
-                        <input type="reset" value="Limpiar formulario"/>
-                    </form>
-            </div>
-        </main>
-        <aside>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </aside>
-        <footer class="pie">
-            <div class="padrePromociones">
-                <form class="email">
-                    <h3>Newsletter</h3>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">¡Suscribite a nuestras promociones!</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <p>Completa tus datos</p>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Sebastian" required>
+                    <div class="valid-feedback">
                     </div>
-                    <input type="button" value="enviar"/>
+                    </div>
+                    <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Ibañez" required>
+                    <div class="valid-feedback">
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                        Please choose a username.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom03" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">Provincia</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">...</option>
+                        <option>Buenos Aires</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Cargar CV</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                    </div>
+                    <div class="col-md-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">Acepto terminos y condiciones
+                        </label>
+                        <div class="invalid-feedback">
+                        You must agree before submitting.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-3">
+                    <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                    </div>
                 </form>
                 <div class="footer_section layout_padding">
                     <div class="container">
@@ -105,7 +115,7 @@
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <h4>Redes Sociales</h4>
-                            <div class="footer_menu">
+                            <div class="footer_redes">
                                 <a href="https://www.instagram.com" target="_blank"><img src="../img/iconoInstragram.png" alt="instagram"></a>
                                 <a href="https://www.facebook.com" target="_blank"><img src="../img/iconoFacebook .png" alt="facebook"></a>
                                 <a href="https://www.twitter.com" target="_blank"><img src="../img/iconoTwitter.png" alt="twitter"></a>
