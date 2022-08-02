@@ -1,0 +1,37 @@
+header {
+    h1{
+        font-family: $titulo;
+        width: 100%;
+        height: 100%;
+        justify-self: start;
+        background-color:#f1f3f2;
+        font-size: 300%;
+        padding: 5%;
+        color: #748DA6;
+        text-align: start;
+    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "titulo titulo nav";
+}
+.titulo{
+    grid-area: titulo;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    font-size: 110%;
+    padding: 5%;
+    font-family: $parrafo;
+    background-color: #f1f3f2;
+    grid-area: nav;
+    align-items: center;
+    .nav-link{
+        transition: all 1s;
+        &:hover{
+            background-color: #748DA6;
+        }
+    }
+
+}
