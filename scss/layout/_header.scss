@@ -5,9 +5,9 @@ header {
         height: 100%;
         justify-self: start;
         background-color:#f1f3f2;
-        font-size: 300%;
+        font-size: 200%;
         padding: 5%;
-        color: #748DA6;
+        color: #274c77;
         text-align: start;
     }
     display: grid;
@@ -21,16 +21,15 @@ header {
 .navbar{
     width: 100%;
     height: 100%;
-    font-size: 110%;
-    padding: 5%;
+    font-size: 100%;
     font-family: $parrafo;
     background-color: #f1f3f2;
     grid-area: nav;
     align-items: center;
-    .nav-link{
+        .nav-link{
         transition: all 1s;
         &:hover{
-            background-color: #748DA6;
+            background-color: #F49FBC;
         }
     }
 

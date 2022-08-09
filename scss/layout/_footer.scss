@@ -1,32 +1,59 @@
 footer{
-    width: 100%;
-    height: auto;
+    @include medidas-generales;
+    p{
+        font-family: $parrafo;
+        font-size: $tam-parrafo;
+    }
     h3{
-        font-size: 200%;
+        font-size: $tam-titulo;
         font-family: $titulo;
-        color: #748DA6;
+        color: #274c77;
     }
     h4{
-        font-size: 150%;
-        font-family: $titulo;
+        @extend h3;
         color: #f1f3f2;
         }
     .email{
-            width: 100%;
             font-size: 100%;
             padding: 30px;
             background-image: url(../img/banner-bg.png);
             background-size: cover;
             align-items: baseline;
+            .input-group {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .input {
+                    min-height: 50px;
+                    max-width: 200px;
+                    padding: 0 1rem;
+                    color: #fff;
+                    font-size: 15px;
+                    border: 1px solid #222831;
+                    border-radius: 6px 0 0 6px;
+                    background-color: white;
+                  }
+                  .button--submit {
+                    min-height: 50px;
+                    padding: .5em 1em;
+                    border: none;
+                    border-radius: 0 6px 6px 0;
+                    background-color: #222831;
+                    color: #fff;
+                    font-size: 15px;
+                    cursor: pointer;
+                    transition: background-color .3s ease-in-out;}
+                .input:focus, .input:focus-visible {
+                border-color: #3898EC;
+                outline: none;
+                }
+            }
         }
     .footer_section {
-        width: 100%;
-        background-color: #252525;
+        background-color: #222831;
         height: auto;
         padding: 50px 0px;
         .useful_text {
-            width: 100%;
-            font-size: 24px;
             color: #ffffff;
             margin-bottom: 15px;
             font-weight: bold;
@@ -39,33 +66,30 @@ footer{
             }
         .footer_menu {
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            ul {
-                margin: 0px;
-                padding: 0px;
+            ul{ 
+                padding: 0;
                 list-style: none;
-                li {
+                li{
+                    font-family: $parrafo;
                     font-size: 16px;
                     color: #ffffff;
-                    a {
+                    padding: 5px;
+                    a{
                         color: #ffffff;
                         text-decoration: none;
                         &:hover{
-                            color: #f76d37;
+                            color: #95F2D9;
                         }
                     }
                 }
             }
         }
         .footer_redes {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
+            @include medidas-generales;
+            @include flex-row;
             gap: 5px;
             @include mobile{
-                display: flex;
-                flex-direction: column;
+                @include flex-col;
             }
         }     
     }

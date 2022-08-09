@@ -20,28 +20,7 @@
 .menu{
     grid-area: main;
 }
-.menuPadre{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "h2 h2 h2" 
-    "titulo1 titulo1 titulo1"
-    "tortas tortas tortas"
-    "titulo2 titulo2 titulo2"
-    "cafe1 cafe2 cafe3";
-    gap: 10px;
-    @include mobile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-.titulo1{
-    grid-area: titulo1;
-}
-.titulo2{
-    grid-area: titulo2;
-}
+
 .tortas{
     grid-area: tortas;
     display: flex;
@@ -52,43 +31,33 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
     @include desktop{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        gap: 20px;
     }
-}
-.cafe1{
-    grid-area: cafe1;
-    transition: all, 3s;
-    &:hover{transform: scale(1.3);}
-    img{
-        width: 70%;
-        height: auto;
-        margin: 10%;
     }
-}
-.cafe2{
-    grid-area: cafe2;
-    transition: all, 3s;
-    &:hover{transform: scale(1.3);}
-    img{
-        width: 70%;
-        height: auto;
-        margin: 10%;
+
+.cafes{ 
+    grid-area: cafes;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding: 2%;
+    @include desktop{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
     }
-}
-.cafe3{
-    grid-area: cafe3;
-    transition: all, 3s;
-    &:hover{transform: scale(1.3);}
-    img{
-        width: 70%;
-        height: auto;
-        margin: 10%;
-    }
+    @include mobile{
+        @include flex-col;
+        }
 }
 
 .historia{
@@ -131,7 +100,9 @@
     height: 100%;
     grid-area: articulo2;
     iframe{
+        padding-bottom: 10px;
         width: 100%;
+        height: 90%;
     }
 }
 
