@@ -29,6 +29,16 @@ header {
     padding: 5%;
     color: #274c77;
     text-align: start; }
+  @media (max-width: 719.98px) {
+    header {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      gap: 0px; } }
 
 .titulo {
   grid-area: titulo; }
