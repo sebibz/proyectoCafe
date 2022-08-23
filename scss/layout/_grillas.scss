@@ -1,0 +1,108 @@
+.grillaPadre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+.encabezado{
+    grid-area: header;
+}
+.pie{
+    grid-area: footer;
+}
+.menu{
+    grid-area: main;
+}
+
+.tortas{
+    grid-area: tortas;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding: 2%;
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    @include desktop{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    }
+
+.cafes{ 
+    grid-area: cafes;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding: 2%;
+    @include desktop{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    @include mobile{
+        @include flex-col;
+        }
+}
+
+.historia{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    img{
+        width: 100%;
+        height: auto;
+    }
+} 
+.grillaHistoria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "articulo1 articulo2 articulo2"
+    "articulo1 articulo2 articulo2";
+    align-items: center;
+    @include mobile{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.articulo1 {
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    grid-area: articulo1;
+    img{
+        width: 90%;
+        height: 90%;
+        }
+    } 
+.articulo2{
+    width: 100%;
+    height: 100%;
+    grid-area: articulo2;
+    iframe{
+        padding-bottom: 10px;
+        width: 100%;
+        height: 90%;
+    }
+}
+

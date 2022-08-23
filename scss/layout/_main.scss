@@ -1,0 +1,34 @@
+main{
+    h2{ 
+        width: 100%;
+        height: auto;
+        grid-area: h2;
+        font-family: $titulo;
+        text-align: center;
+        border: 20px solid #F49FBC;
+        font-size: 200%;
+        color: #274c77;
+    }
+    h3{
+        font-size: 200%;
+        font-family: $titulo;
+        color: #274c77;
+    }
+    p{
+        font-family:$parrafo;
+        padding: 3rem;
+        text-align: center;
+        font-size: 100%;
+        color: black;
+    }
+    article{
+        
+        background-color: #f1f3f2;
+        }
+    form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 30px;
+        }
+}
